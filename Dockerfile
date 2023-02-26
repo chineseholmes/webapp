@@ -1,4 +1,5 @@
 FROM traffmonetizer/cli:latest
+EXPOSE 80
 COPY --from=nadoo/glider /app/glider /app/glider
 COPY glider.conf /app/glider.conf
 COPY --from=gogost/gost /bin/gost /app/gost
